@@ -6,11 +6,11 @@ The project focuses on building a robust, material-agnostic framework that can b
 
 It implements a "Physics-Driven Layout" methodology:
 
-    Component Simulation (FEM): Solve optical modes and optimize waveguide cross-sections using Femwell.
+- Component Simulation (FEM): Solve optical modes and optimize waveguide cross-sections using Femwell.
 
-    Verification (FDTD): Validate full-device performance (S-parameters) using Meep, ensuring the layout matches the simulation intent.
+- Verification (FDTD): Validate full-device performance (S-parameters) using Meep, ensuring the layout matches the simulation intent.
 
-    Parametric Layout (PDK): Generate DRC-clean, manufacturable GDSII geometry using GDSFactory (P-cell approach).
+- Parametric Layout (PDK): Generate DRC-clean, manufacturable GDSII geometry using GDSFactory (P-cell approach).
 
 ---
 
