@@ -1,19 +1,22 @@
 # Silicon Photonics Design: From Mode Solving to FDTD Verification
 
-This repository contains a complete workflow for designing Silicon Photonics components (Waveguides, Couplers, Phase Shifters) using open-source Python tools.
+This repository demonstrates an end-to-end, Python-based design workflow for photonic components. It bridges the gap between physical simulation and layout generation, mirroring a PDK-level development environment.
 
-It implements a "Physics-First" design methodology:
+The project focuses on building a robust, material-agnostic framework that can be adapted to various photonic platforms.
 
-1.  **Physics:** Solve modes and calculate physical dimensions using **Femwell** (FEM).
-2.  **Layout:** Generate manufacturable GDSII geometry using **GDSFactory**.
-3.  **Verification:** Verify full-device performance using **Meep** (FDTD).
+It implements a "Physics-Driven Layout" methodology:
+
+    Component Simulation (FEM): Solve optical modes and optimize waveguide cross-sections using Femwell.
+
+    Verification (FDTD): Validate full-device performance (S-parameters) using Meep, ensuring the layout matches the simulation intent.
+
+    Parametric Layout (PDK): Generate DRC-clean, manufacturable GDSII geometry using GDSFactory (P-cell approach).
 
 ---
 
-## 🛠️ Installation
+## 🛠️ Installation & Environment Management
 
-**⚠️ Important:** Do not use `pip install meep`. It will not work.
-This project requires a **Conda** environment to handle the system-level dependencies (MPI, HDF5) required by the Meep simulation engine.
+⚠️ Critical Note for Users: To ensure stability with system-level MPI/HDF5 dependencies, this project enforces a Conda-based environment. Please do not use pip install meep directly, as it often leads to linkage errors.
 
 ### 1. Prerequisites
 
@@ -23,7 +26,7 @@ Ensure you have **Miniconda** or **Anaconda** installed.
 
 ### 2. Set up the Environment
 
-Run the following commands in your terminal to create a clean environment named `photonics`.
+Run the following commands in your terminal to create a clean environment named e.g. `photonics`.
 
 ```bash
 # 1. Create the environment and install Meep (from conda-forge)
