@@ -14,6 +14,11 @@ class GDSFactoryTwin(DigitalTwin):
     def __init__(self):
         self._component = None 
 
+    @property
+    def symmetry(self):
+        """Default: returns an empty list (no symmetry) for safety."""
+        return []
+
     def _build_component(self):
         raise NotImplementedError
 
@@ -46,17 +51,14 @@ class GDSFactoryTwin(DigitalTwin):
 
     def get_ports(self):
         c = self.get_component()
-        scale = c.kcl.dbu
         port_dict = {}
         
         # FIX 2: Iterate over port objects directly to avoid KeyError
         for p in c.ports:
             name = p.name 
-            center_x = p.center[0] * scale
-            center_y = p.center[1] * scale
             
             port_dict[name] = {
-                "center": mp.Vector3(center_x, center_y),
+                "center": mp.Vector3(p.center[0], p.center[1]),
                 "size": mp.Vector3(0, 2.5) 
             }
         return port_dict
@@ -64,10 +66,9 @@ class GDSFactoryTwin(DigitalTwin):
     def get_bounds(self):
         c = self.get_component()
         
-        # FIX 3: Use dbbox() for robust bounds in microns
-        box = c.dbbox() 
+        box = c.dbbox() # for robust bounds in microns
         
         width_x = box.width()
         height_y = box.height()
         
-        return mp.Vector3(width_x + 4.0, height_y + 4.0, 0)
+        return mp.Vector3(width_x, height_y, 0)
