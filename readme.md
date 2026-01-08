@@ -14,8 +14,10 @@ It implements a **"Physics-Driven Layout"** methodology:
 
 ## 🛠️ Installation & Environment Management
 
-> **⚠️ Critical Note for Users:**
-> To ensure stability with system-level MPI/HDF5 dependencies, this project enforces a **Conda-based environment**. Please **do not** use `pip install meep` directly, as it often leads to linkage errors.
+> **⚠️ Critical Note:**
+> This project relies on **Meep** (C++ FDTD engine) and **GDSFactory**. To ensure stability, we enforce a strict installation order via Conda.
+>
+> **Do NOT use `pip install meep`**, as it will fail to link against system MPI libraries.
 
 ### 1. Prerequisites
 
@@ -23,19 +25,18 @@ Ensure you have **Miniconda** or **Anaconda** installed.
 
 - [Download Miniconda](https://docs.conda.io/en/latest/miniconda.html)
 
-### 2. Set up the Environment
+### 2. Quick Setup (Recommended)
 
-Run the following commands in your terminal to create a clean environment (e.g., named `photonics`).
+The easiest way to replicate the environment is using the provided YAML file. This installs Python 3.11, the Meep physics engine, and all layout tools automatically.
+
+1. Open your terminal.
+2. Navigate to this repository folder.
+3. Run:
 
 ```bash
-# 1. Create the environment and install Meep + MPI Runtime (from conda-forge)
-# We explicitly install openmpi to ensure 'mpirun' is available in the path.
-conda create -n photonics -c conda-forge pymeep openmpi mpi4py -y
+# Create the environment from the file
+conda env create -f environment.yml
 
-# 2. Activate the environment
+# Activate the environment
 conda activate photonics
-
-# 3. Install the remaining Python libraries
-# (Femwell, GDSFactory, and visualization tools)
-pip install femwell gdsfactory scikit-fem shapely pandas matplotlib ipykernel pyyaml
 ```
