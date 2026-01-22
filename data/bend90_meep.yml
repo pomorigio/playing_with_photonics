@@ -1,0 +1,581 @@
+component:
+  info:
+    dy: 5
+    length: 8.318
+    min_bend_radius: 3.53
+    radius: 5
+    route_info_length: 8.318
+    route_info_min_bend_radius: 3.53
+    route_info_n_bend_90: 1
+    route_info_strip_length: 8.318
+    route_info_type: strip
+    route_info_weight: 8.318
+    width: 0.5
+  name: bend_euler_gdsfactorypcomponentspbendspbend_euler_R5_A9_90a35c7e
+  settings:
+    allow_min_radius_violation: false
+    angle: 90
+    cross_section: strip
+    p: 0.5
+    radius: 5
+    with_arc_floorplan: true
+compute_time_minutes: 0.7997740228970845
+compute_time_seconds: 47.98644137382507
+dispersive: false
+is_3d: false
+layer_stack:
+  box:
+    bias: null
+    derived_layer: null
+    info: {}
+    layer: &id002 !!python/object:gdsfactory.technology.layer_stack.LogicalLayer
+      __dict__:
+        layer: !!python/object/apply:gdsfactory.gpdk.layer_map.LAYER
+        - 0
+        sizings_modes: &id003 !!python/tuple
+        - 2
+        sizings_xoffsets: &id001 !!python/tuple
+        - 0
+        sizings_yoffsets: *id001
+      __pydantic_extra__: null
+      __pydantic_fields_set__: !!set
+        layer: null
+      __pydantic_private__: null
+    material: sio2
+    mesh_order: 9
+    name: null
+    sidewall_angle: 0.0
+    sidewall_angle_tolerance: null
+    thickness: 3.0
+    thickness_tolerance: null
+    width_to_z: 0.0
+    width_tolerance: null
+    z_to_bias: null
+    zmin: -3.0
+    zmin_tolerance: null
+  clad:
+    bias: null
+    derived_layer: null
+    info: {}
+    layer: *id002
+    material: sio2
+    mesh_order: 10
+    name: null
+    sidewall_angle: 0.0
+    sidewall_angle_tolerance: null
+    thickness: 3.0
+    thickness_tolerance: null
+    width_to_z: 0.0
+    width_tolerance: null
+    z_to_bias: null
+    zmin: 0.0
+    zmin_tolerance: null
+  core:
+    bias: null
+    derived_layer: !!python/object:gdsfactory.technology.layer_stack.LogicalLayer
+      __dict__:
+        layer: !!python/object/apply:gdsfactory.gpdk.layer_map.LAYER
+        - 1
+        sizings_modes: *id003
+        sizings_xoffsets: *id001
+        sizings_yoffsets: *id001
+      __pydantic_extra__: null
+      __pydantic_fields_set__: !!set
+        layer: null
+      __pydantic_private__: null
+    info: {}
+    layer: !!python/object:gdsfactory.technology.layer_stack.DerivedLayer
+      __dict__:
+        layer1: !!python/object:gdsfactory.technology.layer_stack.DerivedLayer
+          __dict__:
+            layer1: &id006 !!python/object:gdsfactory.technology.layer_stack.LogicalLayer
+              __dict__:
+                layer: !!python/object/apply:gdsfactory.gpdk.layer_map.LAYER
+                - 1
+                sizings_modes: *id003
+                sizings_xoffsets: *id001
+                sizings_yoffsets: *id001
+              __pydantic_extra__: null
+              __pydantic_fields_set__: !!set
+                layer: null
+              __pydantic_private__: null
+            layer2: &id004 !!python/object:gdsfactory.technology.layer_stack.LogicalLayer
+              __dict__:
+                layer: !!python/object/apply:gdsfactory.gpdk.layer_map.LAYER
+                - 6
+                sizings_modes: *id003
+                sizings_xoffsets: *id001
+                sizings_yoffsets: *id001
+              __pydantic_extra__: null
+              __pydantic_fields_set__: !!set
+                layer: null
+              __pydantic_private__: null
+            operation: not
+            sizings_modes: *id003
+            sizings_xoffsets: *id001
+            sizings_yoffsets: *id001
+          __pydantic_extra__: null
+          __pydantic_fields_set__: !!set
+            layer1: null
+            layer2: null
+            operation: null
+          __pydantic_private__: null
+        layer2: &id005 !!python/object:gdsfactory.technology.layer_stack.LogicalLayer
+          __dict__:
+            layer: !!python/object/apply:gdsfactory.gpdk.layer_map.LAYER
+            - 4
+            sizings_modes: *id003
+            sizings_xoffsets: *id001
+            sizings_yoffsets: *id001
+          __pydantic_extra__: null
+          __pydantic_fields_set__: !!set
+            layer: null
+          __pydantic_private__: null
+        operation: not
+        sizings_modes: *id003
+        sizings_xoffsets: *id001
+        sizings_yoffsets: *id001
+      __pydantic_extra__: null
+      __pydantic_fields_set__: !!set
+        layer1: null
+        layer2: null
+        operation: null
+      __pydantic_private__: null
+    material: si
+    mesh_order: 2
+    name: null
+    sidewall_angle: 10.0
+    sidewall_angle_tolerance: null
+    thickness: 0.22
+    thickness_tolerance: null
+    width_to_z: 0.5
+    width_tolerance: null
+    z_to_bias: null
+    zmin: 0.0
+    zmin_tolerance: null
+  deep_etch:
+    bias: null
+    derived_layer: &id007 !!python/object:gdsfactory.technology.layer_stack.LogicalLayer
+      __dict__:
+        layer: !!python/object/apply:gdsfactory.gpdk.layer_map.LAYER
+        - 5
+        sizings_modes: *id003
+        sizings_xoffsets: *id001
+        sizings_yoffsets: *id001
+      __pydantic_extra__: null
+      __pydantic_fields_set__: !!set
+        layer: null
+      __pydantic_private__: null
+    info: {}
+    layer: *id004
+    material: si
+    mesh_order: 1
+    name: null
+    sidewall_angle: 0.0
+    sidewall_angle_tolerance: null
+    thickness: 0.13
+    thickness_tolerance: null
+    width_to_z: 0.0
+    width_tolerance: null
+    z_to_bias: null
+    zmin: 0.0
+    zmin_tolerance: null
+  ge:
+    bias: null
+    derived_layer: null
+    info: {}
+    layer: !!python/object:gdsfactory.technology.layer_stack.LogicalLayer
+      __dict__:
+        layer: !!python/object/apply:gdsfactory.gpdk.layer_map.LAYER
+        - 8
+        sizings_modes: *id003
+        sizings_xoffsets: *id001
+        sizings_yoffsets: *id001
+      __pydantic_extra__: null
+      __pydantic_fields_set__: !!set
+        layer: null
+      __pydantic_private__: null
+    material: ge
+    mesh_order: 1
+    name: null
+    sidewall_angle: 0.0
+    sidewall_angle_tolerance: null
+    thickness: 0.5
+    thickness_tolerance: null
+    width_to_z: 0.0
+    width_tolerance: null
+    z_to_bias: null
+    zmin: 0.22
+    zmin_tolerance: null
+  heater:
+    bias: null
+    derived_layer: null
+    info: {}
+    layer: !!python/object:gdsfactory.technology.layer_stack.LogicalLayer
+      __dict__:
+        layer: !!python/object/apply:gdsfactory.gpdk.layer_map.LAYER
+        - 21
+        sizings_modes: *id003
+        sizings_xoffsets: *id001
+        sizings_yoffsets: *id001
+      __pydantic_extra__: null
+      __pydantic_fields_set__: !!set
+        layer: null
+      __pydantic_private__: null
+    material: TiN
+    mesh_order: 2
+    name: null
+    sidewall_angle: 0.0
+    sidewall_angle_tolerance: null
+    thickness: 0.75
+    thickness_tolerance: null
+    width_to_z: 0.0
+    width_tolerance: null
+    z_to_bias: null
+    zmin: 1.1
+    zmin_tolerance: null
+  metal1:
+    bias: null
+    derived_layer: null
+    info: {}
+    layer: !!python/object:gdsfactory.technology.layer_stack.LogicalLayer
+      __dict__:
+        layer: !!python/object/apply:gdsfactory.gpdk.layer_map.LAYER
+        - 22
+        sizings_modes: *id003
+        sizings_xoffsets: *id001
+        sizings_yoffsets: *id001
+      __pydantic_extra__: null
+      __pydantic_fields_set__: !!set
+        layer: null
+      __pydantic_private__: null
+    material: Aluminum
+    mesh_order: 2
+    name: null
+    sidewall_angle: 0.0
+    sidewall_angle_tolerance: null
+    thickness: 0.7000000000000001
+    thickness_tolerance: null
+    width_to_z: 0.0
+    width_tolerance: null
+    z_to_bias: null
+    zmin: 1.1
+    zmin_tolerance: null
+  metal2:
+    bias: null
+    derived_layer: null
+    info: {}
+    layer: !!python/object:gdsfactory.technology.layer_stack.LogicalLayer
+      __dict__:
+        layer: !!python/object/apply:gdsfactory.gpdk.layer_map.LAYER
+        - 23
+        sizings_modes: *id003
+        sizings_xoffsets: *id001
+        sizings_yoffsets: *id001
+      __pydantic_extra__: null
+      __pydantic_fields_set__: !!set
+        layer: null
+      __pydantic_private__: null
+    material: Aluminum
+    mesh_order: 2
+    name: null
+    sidewall_angle: 0.0
+    sidewall_angle_tolerance: null
+    thickness: 0.7000000000000001
+    thickness_tolerance: null
+    width_to_z: 0.0
+    width_tolerance: null
+    z_to_bias: null
+    zmin: 2.3
+    zmin_tolerance: null
+  metal3:
+    bias: null
+    derived_layer: null
+    info: {}
+    layer: !!python/object:gdsfactory.technology.layer_stack.LogicalLayer
+      __dict__:
+        layer: !!python/object/apply:gdsfactory.gpdk.layer_map.LAYER
+        - 24
+        sizings_modes: *id003
+        sizings_xoffsets: *id001
+        sizings_yoffsets: *id001
+      __pydantic_extra__: null
+      __pydantic_fields_set__: !!set
+        layer: null
+      __pydantic_private__: null
+    material: Aluminum
+    mesh_order: 2
+    name: null
+    sidewall_angle: 0.0
+    sidewall_angle_tolerance: null
+    thickness: 2.0
+    thickness_tolerance: null
+    width_to_z: 0.0
+    width_tolerance: null
+    z_to_bias: null
+    zmin: 3.2
+    zmin_tolerance: null
+  nitride:
+    bias: null
+    derived_layer: null
+    info: {}
+    layer: !!python/object:gdsfactory.technology.layer_stack.LogicalLayer
+      __dict__:
+        layer: !!python/object/apply:gdsfactory.gpdk.layer_map.LAYER
+        - 10
+        sizings_modes: *id003
+        sizings_xoffsets: *id001
+        sizings_yoffsets: *id001
+      __pydantic_extra__: null
+      __pydantic_fields_set__: !!set
+        layer: null
+      __pydantic_private__: null
+    material: sin
+    mesh_order: 2
+    name: null
+    sidewall_angle: 0.0
+    sidewall_angle_tolerance: null
+    thickness: 0.35000000000000003
+    thickness_tolerance: null
+    width_to_z: 0.0
+    width_tolerance: null
+    z_to_bias: null
+    zmin: 0.32
+    zmin_tolerance: null
+  shallow_etch:
+    bias: null
+    derived_layer: !!python/object:gdsfactory.technology.layer_stack.LogicalLayer
+      __dict__:
+        layer: !!python/object/apply:gdsfactory.gpdk.layer_map.LAYER
+        - 3
+        sizings_modes: *id003
+        sizings_xoffsets: *id001
+        sizings_yoffsets: *id001
+      __pydantic_extra__: null
+      __pydantic_fields_set__: !!set
+        layer: null
+      __pydantic_private__: null
+    info: {}
+    layer: !!python/object:gdsfactory.technology.layer_stack.DerivedLayer
+      __dict__:
+        layer1: *id005
+        layer2: *id006
+        operation: and
+        sizings_modes: *id003
+        sizings_xoffsets: *id001
+        sizings_yoffsets: *id001
+      __pydantic_extra__: null
+      __pydantic_fields_set__: !!set
+        layer1: null
+        layer2: null
+        operation: null
+      __pydantic_private__: null
+    material: si
+    mesh_order: 1
+    name: null
+    sidewall_angle: 0.0
+    sidewall_angle_tolerance: null
+    thickness: 0.07
+    thickness_tolerance: null
+    width_to_z: 0.0
+    width_tolerance: null
+    z_to_bias: null
+    zmin: 0.0
+    zmin_tolerance: null
+  slab150:
+    bias: null
+    derived_layer: null
+    info: {}
+    layer: !!python/object:gdsfactory.technology.layer_stack.LogicalLayer
+      __dict__:
+        layer: !!python/object/apply:gdsfactory.gpdk.layer_map.LAYER
+        - 3
+        sizings_modes: *id003
+        sizings_xoffsets: *id001
+        sizings_yoffsets: *id001
+      __pydantic_extra__: null
+      __pydantic_fields_set__: !!set
+        layer: null
+      __pydantic_private__: null
+    material: si
+    mesh_order: 3
+    name: null
+    sidewall_angle: 0.0
+    sidewall_angle_tolerance: null
+    thickness: 0.15
+    thickness_tolerance: null
+    width_to_z: 0.0
+    width_tolerance: null
+    z_to_bias: null
+    zmin: 0.0
+    zmin_tolerance: null
+  slab90:
+    bias: null
+    derived_layer: null
+    info: {}
+    layer: *id007
+    material: si
+    mesh_order: 2
+    name: null
+    sidewall_angle: 0.0
+    sidewall_angle_tolerance: null
+    thickness: 0.09
+    thickness_tolerance: null
+    width_to_z: 0.0
+    width_tolerance: null
+    z_to_bias: null
+    zmin: 0.0
+    zmin_tolerance: null
+  substrate:
+    bias: null
+    derived_layer: null
+    info: {}
+    layer: *id002
+    material: si
+    mesh_order: 101
+    name: null
+    sidewall_angle: 0.0
+    sidewall_angle_tolerance: null
+    thickness: 10.0
+    thickness_tolerance: null
+    width_to_z: 0.0
+    width_tolerance: null
+    z_to_bias: null
+    zmin: -13.0
+    zmin_tolerance: null
+  undercut:
+    bias: null
+    derived_layer: null
+    info: {}
+    layer: !!python/object:gdsfactory.technology.layer_stack.LogicalLayer
+      __dict__:
+        layer: !!python/object/apply:gdsfactory.gpdk.layer_map.LAYER
+        - 9
+        sizings_modes: *id003
+        sizings_xoffsets: *id001
+        sizings_yoffsets: *id001
+      __pydantic_extra__: null
+      __pydantic_fields_set__: !!set
+        layer: null
+      __pydantic_private__: null
+    material: air
+    mesh_order: 1
+    name: null
+    sidewall_angle: 0.0
+    sidewall_angle_tolerance: null
+    thickness: -5.0
+    thickness_tolerance: null
+    width_to_z: 0.0
+    width_tolerance: null
+    z_to_bias: !!python/tuple
+    - - 0.0
+      - 0.3
+      - 0.6
+      - 0.8
+      - 0.9
+      - 1.0
+    - - 0.0
+      - -0.5
+      - -1.0
+      - -1.5
+      - -2.0
+      - -2.5
+    zmin: -3.0
+    zmin_tolerance: null
+  via1:
+    bias: null
+    derived_layer: null
+    info: {}
+    layer: !!python/object:gdsfactory.technology.layer_stack.LogicalLayer
+      __dict__:
+        layer: !!python/object/apply:gdsfactory.gpdk.layer_map.LAYER
+        - 27
+        sizings_modes: *id003
+        sizings_xoffsets: *id001
+        sizings_yoffsets: *id001
+      __pydantic_extra__: null
+      __pydantic_fields_set__: !!set
+        layer: null
+      __pydantic_private__: null
+    material: Aluminum
+    mesh_order: 1
+    name: null
+    sidewall_angle: 0.0
+    sidewall_angle_tolerance: null
+    thickness: 0.49999999999999956
+    thickness_tolerance: null
+    width_to_z: 0.0
+    width_tolerance: null
+    z_to_bias: null
+    zmin: 1.8000000000000003
+    zmin_tolerance: null
+  via2:
+    bias: null
+    derived_layer: null
+    info: {}
+    layer: !!python/object:gdsfactory.technology.layer_stack.LogicalLayer
+      __dict__:
+        layer: !!python/object/apply:gdsfactory.gpdk.layer_map.LAYER
+        - 28
+        sizings_modes: *id003
+        sizings_xoffsets: *id001
+        sizings_yoffsets: *id001
+      __pydantic_extra__: null
+      __pydantic_fields_set__: !!set
+        layer: null
+      __pydantic_private__: null
+    material: Aluminum
+    mesh_order: 1
+    name: null
+    sidewall_angle: 0.0
+    sidewall_angle_tolerance: null
+    thickness: 0.20000000000000018
+    thickness_tolerance: null
+    width_to_z: 0.0
+    width_tolerance: null
+    z_to_bias: null
+    zmin: 3.0
+    zmin_tolerance: null
+  via_contact:
+    bias: null
+    derived_layer: null
+    info: {}
+    layer: !!python/object:gdsfactory.technology.layer_stack.LogicalLayer
+      __dict__:
+        layer: !!python/object/apply:gdsfactory.gpdk.layer_map.LAYER
+        - 26
+        sizings_modes: *id003
+        sizings_xoffsets: *id001
+        sizings_yoffsets: *id001
+      __pydantic_extra__: null
+      __pydantic_fields_set__: !!set
+        layer: null
+      __pydantic_private__: null
+    material: Aluminum
+    mesh_order: 1
+    name: null
+    sidewall_angle: -10.0
+    sidewall_angle_tolerance: null
+    thickness: 1.01
+    thickness_tolerance: null
+    width_to_z: 0.0
+    width_tolerance: null
+    z_to_bias: null
+    zmin: 0.09
+    zmin_tolerance: null
+port_margin: 2
+port_monitor_offset: -0.1
+port_source_offset: -0.1
+port_symmetries:
+  o2@0,o1@0:
+  - o1@0,o2@0
+resolution: 30
+wavelength_points: 50
+wavelength_start: 1.5
+wavelength_stop: 1.6
+xmargin_left: 0
+xmargin_right: 3
+ymargin_bot: 3
+ymargin_top: 0
+zmargin_bot: 0
+zmargin_top: 0

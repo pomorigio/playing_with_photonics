@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="29dc5b92-556d-4dd8-bf6d-05088506e7d2" name="Changes" comment="" />
+    <list default="true" id="29dc5b92-556d-4dd8-bf6d-05088506e7d2" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/3_directional_coupler.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/3_directional_coupler.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/4_multimode_interferometer.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/4_multimode_interferometer.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mmi_1x2_params.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/mmi_1x2_params.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nb.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/meep_utils/digital_twins/base.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/meep_utils/digital_twins/dc.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/meep_utils/digital_twins/dc.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/meep_utils/digital_twins/mmi.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/meep_utils/digital_twins/mmi.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/meep_utils/runner.py" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,10 +19,10 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 7
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 7
+}</component>
   <component name="ProjectId" id="37vQ8Yz3EQUgZIc4s0WiS4TRL4p" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -23,7 +32,9 @@
   "keyToString": {
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "ai.playground.ignore.import.keys.banner.in.settings": "true",
     "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
     "junie.onboarding.icon.badge.shown": "true",
     "nodejs_package_manager_path": "npm",
@@ -34,8 +45,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-9b0f141eb926-JavaScript-PY-253.29346.142" />
-        <option value="bundled-python-sdk-f2b7a9f6281b-6e1f45a539f7-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-253.29346.142" />
+        <option value="bundled-js-predefined-d6986cc7102b-9b0f141eb926-JavaScript-PY-253.29346.308" />
+        <option value="bundled-python-sdk-ca5e2b39c7df-6e1f45a539f7-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-253.29346.308" />
       </set>
     </attachedChunks>
   </component>
@@ -47,6 +58,7 @@
       <option name="presentableId" value="Default" />
       <updated>1767780910266</updated>
       <workItem from="1767780912159" duration="1000" />
+      <workItem from="1768508116403" duration="12000" />
     </task>
     <servers />
   </component>
